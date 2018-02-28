@@ -1,0 +1,8 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections
+-IC:\keil_work\led\RTE\Device\STM32F103RC
+-IC:\keil_work\led\RTE\_Target_1
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc
+-D__UVISION_VERSION="522" -D_RTE_ -DSTM32F10X_HD
+-o .\objects\stm32f10x_rtc.o --omf_browse .\objects\stm32f10x_rtc.crf --depend .\objects\stm32f10x_rtc.d "C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_rtc.c"
