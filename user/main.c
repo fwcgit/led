@@ -21,10 +21,10 @@ int main(void)
 		RCLK(0);
 		for(j = 0; j < 64;j++)
 		{
-			r = (j % 8)+1;
-			data = (r+j - 8 * (r-1)) << 7;
+			r = (j / 8)+1;
+			data = (1 << (7 - r-1));
 			data = data << 8;
-			data = data | (1 << (7 - r-1));
+			data = data | (1 << (7-(j % 8+1)));
 			
 				for( i = 0 ; i < 16 ; i++)
 			{
